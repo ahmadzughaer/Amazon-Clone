@@ -62,5 +62,18 @@ document.querySelector('.dec-btn').addEventListener('click', () => {
     }
 })
 
+$('#right-button').click( () =>{
+    event.preventDefault();
+    $('.crasoual').animate({
+        scrollLeft: "+=1000px"
+    }, "slow");
+});
+
+$('#left-button').click(  () =>{
+    event.preventDefault();
+    $('.crasoual').animate({
+        scrollLeft: "-=1000px"
+    }, "slow");
+});
 
 

@@ -368,7 +368,7 @@ body {
 
 main {
   width: 100%;
-  height: auto;
+  height: 145vh;
   display: flex;
 }
 
@@ -488,9 +488,11 @@ main {
 .price a:hover,
 .price-4 a:hover,
 .share a:hover,
-.buy a:hover {
+.buy a:hover,
+.card p:hover {
   text-decoration: underline;
   color: #c7511f;
+  cursor: pointer;
 }
 
 .price-2 {
@@ -710,8 +712,10 @@ aside {
   color: #0071a0;
 }
 .location-2 p:hover,
-.transaction p:hover {
+.transaction p:hover,
+.buy span:hover {
   color: #c7511f;
+  cursor: pointer;
 }
 
 #stock {
@@ -766,15 +770,78 @@ aside {
   color: #0071a0;
 }
 .shipping-details {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .shipping-details p {
-    font-size: 13px;
-    color: rgb(53, 52, 52);
-    margin: 5px 0 0 20px;
+  font-size: 13px;
+  color: rgb(53, 52, 52);
+  margin: 5px 0 0 20px;
 }
 
 .shipping-details span {
-    font-weight: bold;
-    margin-left: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.crasoual {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 200px;
+  height: 280px;
+  margin: 10px 0 0 10px;
+  transform-style: preserve-3d;
+}
+
+.card img {
+  width: 16em;
+  height: 15em;
+  cursor: pointer;
+}
+
+.card p,
+.buy span {
+  width: 85%;
+  text-align: left;
+  font-size: 14px;
+  margin: 10px 0 0 14px;
+  color: #0071a0;
+}
+
+.card-span {
+  background: url("/assets/images/aui-mini-sprite-2015-02.png") no-repeat -170px
+    0;
+  width: 80px;
+  height: 15px;
+  cursor: pointer;
+  margin: 10px 0 0 10px;
+  font-size: 14px;
+}
+
+.card-span p {
+  margin-left: 90px;
+}
+
+.lefty {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+  margin: 100px 0 0 10px;
+  cursor: pointer;
+}
+
+.righty {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 95%;
+  margin-top: 100px;
+  cursor: pointer;
 }
